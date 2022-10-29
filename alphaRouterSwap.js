@@ -55,7 +55,7 @@ async function main() {
     value: BigNumber.from(route.methodParameters.value),
     from: WALLET_ADDRESS,
     gasPrice: BigNumber.from(route.gasPriceWei),
-    gasLimit: ethers.utils.hexlify(1000000), // this is gas limit is very high but we can put some lower value on Mainnet
+    gasLimit: ethers.utils.hexlify(1000000), // this gas limit is very high but we can put some lower value on Mainnet
   };
 
   const wallet = new ethers.Wallet(WALLET_SECRET); // Creating instance of wallet
